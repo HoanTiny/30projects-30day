@@ -1,2 +1,3 @@
-# 30projects-30day
-Day 1
+# Hi I'm Hoàn Tiny
+
+Thank you

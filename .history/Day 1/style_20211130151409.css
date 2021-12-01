@@ -1,0 +1,12 @@
+body {
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    background-color: #272d40;
+}

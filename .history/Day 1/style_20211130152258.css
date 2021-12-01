@@ -1,0 +1,34 @@
+body {
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    background-color: #272d40;
+    position: relative;
+}
+
+.heart-icon {
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.cart-icon {
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.product-img {
+    width: 240px;
+    height: 160px;
+}

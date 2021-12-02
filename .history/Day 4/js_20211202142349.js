@@ -1,0 +1,10 @@
+const btnNext = document.querySelector(".icon-next");
+const btnPrev = document.querySelector(".icon-prev");
+const slider = document.querySelector(".slider");
+const imgItems = document.querySelectorAll(".img-item");
+
+imgItems.forEach(function (imgItem) {
+    imgItem.addEventListener("click", function () {
+        console.log("j");
+    });
+});

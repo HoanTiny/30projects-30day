@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+}
+
+.img-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-item {
+    width: 22%;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.img-item.hover img {
+    transform: scale(1.2);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}

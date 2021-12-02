@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}

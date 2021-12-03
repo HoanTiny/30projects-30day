@@ -1,0 +1,80 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #17a2b8;
+}
+
+.conatainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-press {
+    padding: 24px 32px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+
+.pressed-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-key {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+}
+
+.key-infor {
+    margin-top: 32px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-key {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.btn-key p {
+    width: 100%;
+    background-color: #78c0c9;
+    padding: 8px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.key {
+}
+
+.location {
+}
+
+.which {
+}
+
+.code {
+}

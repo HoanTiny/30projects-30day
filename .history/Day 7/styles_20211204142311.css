@@ -1,0 +1,25 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #8cc84c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.heading {
+    font-size: 18px;
+    padding: 8px 0;
+}

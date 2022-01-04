@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+    font: inherit;
+}
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-typing {
+    color: #96ee1c;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0 0 100px #96ee1c;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+p {
+    animation: typing 5s steps(27, end) infinite, cursor-blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor-blink {
+    50% {
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+:root {
+    --facebook-color: #3b5999;
+    --instagram-color: #e1306c;
+    --youtube-color: #de463b;
+    --twitter-color: #46c1f6;
+    --github-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.icon span {
+    display: none;
+}
+
+.facebook:hover span,
+.twitter:hover span,
+.github:hover span,
+.instagram:hover span,
+.youtube:hover span {
+    display: block;
+}
+
+.icon span {
+    position: absolute;
+    top: -60px;
+    padding: 8px 14px;
+    border-radius: 24px;
+    color: #fff;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 20%);
+    animation: show 1s ease;
+}
+
+@keyframes show {
+    from {
+        transform: translateX(-100);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.icon.facebook span {
+    background-color: var(--facebook-color);
+}
+.icon.github span {
+    background-color: var(--github-color);
+}
+.icon.twitter span {
+    background-color: var(--twitter-color);
+}
+.icon.instagram span {
+    background-color: var(--instagram-color);
+}
+.icon.youtube span {
+    background-color: var(--youtube-color);
+}
+
+.icon span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 40%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.icon.facebook span::before {
+    border-top: 12px solid var(--facebook-color);
+}
+.icon.github span::before {
+    border-top: 12px solid var(--github-color);
+}
+.icon.twitter span::before {
+    border-top: 12px solid var(--twitter-color);
+}
+.icon.instagram span::before {
+    border-top: 12px solid var(--instagram-color);
+}
+.icon.youtube span::before {
+    border-top: 12px solid var(--youtube-color);
+}
